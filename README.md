@@ -1,142 +1,147 @@
 # StablePay AI
 
-**Smart Stablecoin Payments + Intelligence Layer**
+<p align="center">
+  <img src="https://img.shields.io/badge/StablePay-AI-8b5cf6?style=for-the-badge&logo=blockchain&logoColor=white" alt="StablePay AI">
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=nextdotjs" alt="Next.js">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Polygon-8247e5?style=for-the-badge&logo=polygon" alt="Polygon">
+  <img src="https://img.shields.io/badge/Python-3.11-yellow?style=for-the-badge&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript" alt="TypeScript">
+</p>
 
-StablePay AI is a blockchain-native payment infrastructure that enables merchants to seamlessly accept stablecoin payments while unlocking real-time financial insights through AI.
+<p align="center">
+  <a href="https://github.com/joshuapremkumar/stablepay-ai/stargazers">
+    <img src="https://img.shields.io/github/stars/joshuapremkumar/stablepay-ai?style=social" alt="Stars">
+  </a>
+  <a href="https://github.com/joshuapremkumar/stablepay-ai/forks">
+    <img src="https://img.shields.io/github/forks/joshuapremkumar/stablepay-ai?style=social" alt="Forks">
+  </a>
+  <a href="https://github.com/joshuapremkumar/stablepay-ai/issues">
+    <img src="https://img.shields.io/github/issues/joshuapremkumar/stablepay-ai" alt="Issues">
+  </a>
+  <img src="https://img.shields.io/github/license/joshuapremkumar/stablepay-ai" alt="License">
+</p>
 
 ---
 
-## Problem
+> **Smart Stablecoin Payments + Intelligence Layer** — A blockchain-native payment infrastructure that enables merchants to seamlessly accept stablecoin payments while unlocking real-time financial insights through AI.
+
+---
+
+## 🚀 Features
+
+| Feature | Description |
+|---------|-------------|
+| 💳 **QR Payments** | Scan-to-pay stablecoin transactions |
+| ⚡ **Instant Settlement** | Fast blockchain transactions on Polygon |
+| 🧠 **AI Fraud Detection** | Machine learning-powered risk analysis |
+| 📊 **Analytics Dashboard** | Real-time transaction insights |
+| 🔗 **Smart Contracts** | Secure on-chain payment logic |
+| 🔒 **Secure Wallet** | Encrypted wallet management |
+
+---
+
+## 🌍 The Problem
 
 Despite rapid growth in digital payments and cryptocurrency adoption, merchants still lack simple, compliant, and scalable tools to accept stablecoin payments in real-world transactions.
 
-- High transaction fees (2-3%)
-- Delayed settlements
-- No merchant-friendly stablecoin POS systems
-- No intelligence from transaction data
+- ❌ High transaction fees (2-3%)
+- ❌ Delayed settlements
+- ❌ No merchant-friendly stablecoin POS systems
+- ❌ No intelligence from transaction data
 
-This creates a gap between **consumer capability (crypto adoption)** and **merchant readiness**.
+**This creates a gap between consumer capability (crypto adoption) and merchant readiness.**
 
 ---
 
-## Solution
+## 💡 The Solution
 
 StablePay AI bridges traditional finance and blockchain by providing:
 
-- QR-based stablecoin payments
-- Instant settlement on blockchain
-- AI-powered fraud detection & insights
-- Merchant dashboard for analytics
+```
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│  Customer   │────▶│  Backend    │────▶│  Blockchain │
+│  (QR Scan)  │     │  (FastAPI)  │     │  (Polygon)  │
+└──────────────┘     └──────────────┘     └──────────────┘
+                           │
+                    ┌──────┴──────┐
+                    │  AI Engine  │
+                    │  ( Fraud +  │
+                    │  Analytics)│
+                    └────────────┘
+```
 
-Built on scalable infrastructure like Polygon, the platform ensures fast, low-cost, and secure transactions.
-
----
-
-## Architecture
-
-StablePay AI follows a modular architecture:
-
-- **Frontend**: Next.js (Merchant dashboard + QR UI)
-- **Backend**: FastAPI (APIs, wallet logic, transaction handling)
-- **Blockchain Layer**: Smart contracts for payments
-- **AI Engine**: Fraud detection + analytics
-- **Database**: Transaction storage & insights
-
----
-
-## How It Works
-
-1. Customer scans QR code
-2. Payment request sent to backend
-3. Transaction processed via blockchain
-4. Funds settled instantly to merchant
-5. AI analyzes transaction
-6. Dashboard updates in real-time
+- ✅ QR-based stablecoin payments
+- ✅ Instant settlement on blockchain
+- ✅ AI-powered fraud detection & insights
+- ✅ Merchant dashboard for analytics
 
 ---
 
-## Target Customers
+## 🏗️ Architecture
 
-- SMEs (retail stores, cafes, restaurants)
-- Tourist-facing businesses (hotels, malls, airports)
-- E-commerce merchants
-- Early adopters of crypto payments
-
----
-
-## Business Model Canvas
-
-### Customer Segments
-- SMEs and retail merchants
-- Tourist-heavy businesses
-- E-commerce platforms
-
-### Value Proposition
-- Accept stablecoins easily
-- Lower transaction costs
-- Instant settlement
-- AI-driven business insights
-- Fraud detection
-
-### Channels
-- Direct merchant onboarding
-- POS integrations
-- Fintech partnerships
-- Startup ecosystems
-
-### Customer Relationships
-- Self-service onboarding
-- Dashboard engagement
-- Merchant support
-
-### Revenue Streams
-- Transaction fees (0.5%-1%)
-- Subscription for analytics dashboard
-- Premium AI features
-- Future: lending/credit services
-
-### Key Resources
-- Blockchain infrastructure (Polygon)
-- AI models
-- Engineering team
-- Merchant network
-
-### Key Activities
-- Platform development
-- Smart contract deployment
-- AI model training
-- Merchant onboarding
-
-### Key Partnerships
-- Blockchain platforms
-- Financial institutions
-- POS providers
-- Regulatory ecosystems
-
-### Cost Structure
-- Development & engineering
-- Cloud infrastructure
-- Blockchain costs
-- Marketing & acquisition
-- Compliance
+```
+                    ┌─────────────────────┐
+                    │   Frontend (Next.js)  │
+                    │  • Dashboard        │
+                    │  • QR Payments      │
+                    │  • Analytics UI    │
+                    └──────────┬──────────┘
+                               │ REST API
+                    ┌──────────▼──────────┐
+                    │  Backend (FastAPI)   │
+                    │  • REST API         │
+                    │  • Fraud Detection │
+                    │  • Wallet Logic    │
+                    └──────────┬──────────┘
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+    ┌─────────▼─────────┐ ┌──▼────┐ ┌─────▼─────┐
+    │      AI Engine     │ │Database│ │Blockchain│
+    │  • Fraud Detect  │ │SQLite  │ │ Polygon  │
+    │  • Analytics   │ │       │ │ Contracts│
+    └────────────────┘ └───────┘ └──────────┘
+```
 
 ---
 
-## Tech Stack
+## 🔄 How It Works
 
-- **Frontend**: Next.js, Tailwind CSS
-- **Backend**: FastAPI (Python)
-- **Blockchain**: Polygon (Smart Contracts)
-- **AI/ML**: Python (scikit-learn)
+1. **Customer scans QR code** — Mobile wallet initiates payment
+2. **Payment request sent to backend** — FastAPI processes transaction
+3. **AI analyzes risk** — Fraud detection check
+4. **Transaction on blockchain** — Polygon processes payment
+5. **Funds settled instantly** — Merchant receives payment
+6. **Dashboard updates** — Real-time analytics
 
 ---
 
-## Getting Started
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | Next.js 14, TypeScript, Tailwind CSS |
+| **Backend** | FastAPI, Python 3.11 |
+| **Blockchain** | Solidity, Hardhat, Polygon |
+| **AI/ML** | scikit-learn, pandas |
+| **Database** | SQLite (async) |
+
+---
+
+## 🚦 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Python 3.11+
+- npm or yarn
+- Hardhat (for blockchain)
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/stablepay-ai.git
+git clone https://github.com/joshuapremkumar/stablepay-ai.git
 cd stablepay-ai
 ```
 
@@ -146,6 +151,8 @@ cd stablepay-ai
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
+# API: http://localhost:8000
+# Docs: http://localhost:8000/docs
 ```
 
 ### 3. Run Frontend
@@ -154,9 +161,10 @@ uvicorn main:app --reload
 cd frontend
 npm install
 npm run dev
+# App: http://localhost:3000
 ```
 
-### 4. Blockchain Setup
+### 4. Blockchain (Optional)
 
 ```bash
 cd blockchain
@@ -166,46 +174,104 @@ npx hardhat compile
 
 ---
 
-## API Documentation
+## 📡 API Endpoints
 
-After running backend:
-
-- http://127.0.0.1:8000/docs
-
----
-
-## Future Roadmap
-
-- Real blockchain integration (Polygon mainnet)
-- Advanced ML fraud detection
-- Predictive analytics
-- SME credit scoring
-- Global expansion
+| Endpoint | Method | Description |
+|---------|--------|------------|
+| `/pay` | POST | Make a payment |
+| `/transactions` | GET | List transactions |
+| `/analytics` | GET | Get analytics |
+| `/health` | GET | Health check |
 
 ---
 
-## Team
+## 🎯 Target Customers
 
-- **Joshua Premkumar** - Product & System Design
-- **Ilyes Sais** - AI Research
-- **Mohy M** - Machine Learning & Applied Mathematics
-
----
-
-## Vision
-
-> To become the **Stripe for stablecoin payments**, powered by AI and built for the global digital economy.
+- 🏪 SMEs (retail stores, cafes, restaurants)
+- ✈️ Tourist businesses (hotels, malls, airports)
+- 🛒 E-commerce merchants
+- 🌟 Early adopters of crypto payments
 
 ---
 
-## Contact
+## 💰 Business Model
 
-For collaborations, partnerships, or demo requests:
+### Revenue Streams
+- Transaction fees (0.5%-1%)
+- Subscription for analytics dashboard
+- Premium AI features
 
-- Email: joshuaezekiel334@gmail.com
+### Cost Structure
+- Development & engineering
+- Cloud infrastructure
+- Blockchain gas costs
 
 ---
 
-## Contribute
+## 🔮 Future Roadmap
 
-We welcome contributions! Feel free to fork the repo and submit a PR.
+- [ ] Polygon mainnet integration
+- [ ] Advanced ML fraud detection model
+- [ ] Predictive analytics
+- [ ] SME credit scoring
+- [ ] Mobile app (React Native)
+- [ ] Multi-chain support (ETH, BSC, Avalanche)
+
+---
+
+## 👥 Team
+
+| Role | Name | Focus |
+|------|------|-------|
+| 🎨 Lead | **Joshua Premkumar** | Product & System Design |
+| 🧠 AI | **Ilyes Sais** | AI Research |
+| 🔬 ML | **Mohy M** | Machine Learning & Applied Math |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) first.
+
+```bash
+# Fork the repo
+# Create your feature branch
+git checkout -b feature/amazing-feature
+# Commit your changes
+git commit -m 'Add amazing feature'
+# Push to the branch
+git push origin feature/amazing-feature
+# Open a Pull Request
+```
+
+---
+
+## 📄 License
+
+MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+## 🌟 Show Your Support
+
+Give a ⭐ if this project helped you!
+
+[![GitHub stars](https://img.shields.io/github/stars/joshuapremkumar/stablepay-ai?style=social)](https://github.com/joshuapremkumar/stablepay-ai/stargazers)
+
+---
+
+## 📬 Contact
+
+- 📧 Email: joshuaezekiel334@gmail.com
+- 🐦 Twitter: [@joshuapremkumar](https://twitter.com/joshuapremkumar)
+- 🔗 LinkedIn: [Joshua Premkumar](https://linkedin.com/in/joshuapremkumar)
+
+---
+
+<p align="center">
+  <strong>Vision:</strong> To become the <em>Stripe for stablecoin payments</em>, powered by AI and built for the global digital economy.
+</p>
+
+<p align="center">
+  Made with ❤️ by the StablePay AI team
+</p>
