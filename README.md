@@ -262,9 +262,9 @@ Give a ⭐ if this project helped you!
 
 ## 📬 Contact
 
-- 📧 Email: joshuaezekiel334@gmail.com
-- 🐦 Twitter: [@joshuapremkumar](https://twitter.com/joshuapremkumar)
-- 🔗 LinkedIn: [Joshua Premkumar](https://linkedin.com/in/joshuapremkumar)
+- Email: joshuaezekiel334@gmail.com
+- Twitter: @joshuaezekiel31
+- LinkedIn: https://www.linkedin.com/in/joshua-premkumar-214b76195
 
 ---
 
