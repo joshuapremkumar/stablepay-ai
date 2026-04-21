@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000
+      - NEXT_PUBLIC_BLOCKCHAIN_RPC=https://rpc-amoy.polygon.technology
+      - NEXT_PUBLIC_CONTRACT_ADDRESS=${CONTRACT_ADDRESS:-}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - stablepay-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./stablepay.db
+      - POLYGON_RPC=https://rpc-amoy.polygon.technology
+      - CONTRACT_ADDRESS=${CONTRACT_ADDRESS:-}
+      - WALLET_PRIVATE_KEY=${WALLET_PRIVATE_KEY:-}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - db-data:/app/data
+    restart: unless-stopped
+    networks:
+      - stablepay-network
+
+  ai-engine:
+    build:
+      context: ./ai-engine
+      dockerfile: Dockerfile
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - stablepay-network
+
+networks:
+  stablepay-network:
+    driver: bridge
+
+volumes:
+  db-data:
